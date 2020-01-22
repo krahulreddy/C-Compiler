@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define max 10;
+#define max 10
 
 void main()
 {

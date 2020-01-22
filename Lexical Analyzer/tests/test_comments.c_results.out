@@ -1,0 +1,74 @@
+Line			Lexeme			Token Class
+1		#include <stdio.h> 		Pre Processor directive
+
+2
+3			//Program to verify various comment structures in C-language.  			- SINGLE LINE COMMENT
+
+4
+5			void 			KEYWORD
+			main 			KEYWORD
+			( 			OPENING BRACKETS
+			) 			CLOSING BRACKETS
+
+6			{ 			OPENING BRACES
+
+7			int 			KEYWORD
+			num 			IDENTIFIER
+			; 			SEMICOLON DELIMITER
+
+8			/*
+    Here 'int' is a Keyword
+    'num' is an Identifier
+    This is a multi-line comment
+    */ 			MULTI LINE COMMENT
+
+9
+10			num 			IDENTIFIER
+			= 			OPERATOR
+			10 			NUMBER CONSTANT
+			; 			SEMICOLON DELIMITER
+
+11			/*
+    The Identifier 'num' is initializer the value 10
+    /*
+        We can increase the value of 'num' by 10
+        That is : num = num + 10
+    /*
+    This is a nested multi-line comment
+    */ 			MULTI LINE COMMENT
+
+12
+13			num 			IDENTIFIER
+			= 			OPERATOR
+			num 			IDENTIFIER
+			+ 			OPERATOR
+			10 			NUMBER CONSTANT
+			; 			SEMICOLON DELIMITER
+
+14
+15			printf 			IDENTIFIER
+			( 			OPENING BRACKETS
+			"num : %d" 			STRING CONSTANT
+			, 			COMMA DELIMITER
+			num 			IDENTIFIER
+			) 			CLOSING BRACKETS
+			; 			SEMICOLON DELIMITER
+
+16			//Printing the value stored in the Identifier 'num'. This is a single-line comment 			- SINGLE LINE COMMENT
+
+17			} 			CLOSING BRACES
+
+
+SYMBOL TABLE
+
+	num		IDENTIFIER
+	int		KEYWORD
+	main		KEYWORD
+	printf		IDENTIFIER
+	void		KEYWORD
+
+
+CONSTANT TABLE
+
+	"num : %d"		STRING CONSTANT
+	10		NUMBER CONSTANT

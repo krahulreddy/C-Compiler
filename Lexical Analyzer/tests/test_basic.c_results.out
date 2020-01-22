@@ -1,0 +1,199 @@
+Line			Lexeme			Token Class
+1		#include <stdio.h> 		Pre Processor directive
+
+2
+3			struct 			KEYWORD
+			duo 			IDENTIFIER
+			{ 			OPENING BRACES
+
+4			int 			KEYWORD
+			first 			IDENTIFIER
+			; 			SEMICOLON DELIMITER
+
+5			float 			KEYWORD
+			second 			IDENTIFIER
+			; 			SEMICOLON DELIMITER
+
+6			} 			CLOSING BRACES
+			X 			IDENTIFIER
+			; 			SEMICOLON DELIMITER
+
+7
+8			void 			KEYWORD
+			func 			IDENTIFIER
+			( 			OPENING BRACKETS
+			int 			KEYWORD
+			a 			IDENTIFIER
+			, 			COMMA DELIMITER
+			float 			KEYWORD
+			b 			IDENTIFIER
+			) 			CLOSING BRACKETS
+
+9			{ 			OPENING BRACES
+
+10			printf 			IDENTIFIER
+			( 			OPENING BRACKETS
+			"Integer value : %d\n" 			STRING CONSTANT
+			, 			COMMA DELIMITER
+			a 			IDENTIFIER
+			) 			CLOSING BRACKETS
+			; 			SEMICOLON DELIMITER
+
+11			printf 			IDENTIFIER
+			( 			OPENING BRACKETS
+			"Float value : %f\n" 			STRING CONSTANT
+			, 			COMMA DELIMITER
+			b 			IDENTIFIER
+			) 			CLOSING BRACKETS
+			; 			SEMICOLON DELIMITER
+
+12
+13			} 			CLOSING BRACES
+
+14			int 			KEYWORD
+			main 			KEYWORD
+			( 			OPENING BRACKETS
+			) 			CLOSING BRACKETS
+
+15			{ 			OPENING BRACES
+
+16			int 			KEYWORD
+			a 			IDENTIFIER
+			, 			COMMA DELIMITER
+			b 			IDENTIFIER
+			, 			COMMA DELIMITER
+			sum 			IDENTIFIER
+			, 			COMMA DELIMITER
+			diff 			IDENTIFIER
+			, 			COMMA DELIMITER
+			prod 			IDENTIFIER
+			, 			COMMA DELIMITER
+			div 			IDENTIFIER
+			, 			COMMA DELIMITER
+			amp 			IDENTIFIER
+			, 			COMMA DELIMITER
+			orr 			IDENTIFIER
+			; 			SEMICOLON DELIMITER
+
+17			a 			IDENTIFIER
+			= 			OPERATOR
+			10 			NUMBER CONSTANT
+			; 			SEMICOLON DELIMITER
+			b 			IDENTIFIER
+			= 			OPERATOR
+			6 			NUMBER CONSTANT
+			; 			SEMICOLON DELIMITER
+
+18
+19			sum 			IDENTIFIER
+			= 			OPERATOR
+			a 			IDENTIFIER
+			+ 			OPERATOR
+			b 			IDENTIFIER
+			; 			SEMICOLON DELIMITER
+
+20			diff 			IDENTIFIER
+			= 			OPERATOR
+			a 			IDENTIFIER
+			- 			OPERATOR
+			b 			IDENTIFIER
+			; 			SEMICOLON DELIMITER
+
+21			prod 			IDENTIFIER
+			= 			OPERATOR
+			a 			IDENTIFIER
+			* 			OPERATOR
+			b 			IDENTIFIER
+			; 			SEMICOLON DELIMITER
+
+22			div 			IDENTIFIER
+			= 			OPERATOR
+			a 			IDENTIFIER
+			/ 			OPERATOR
+			b 			IDENTIFIER
+			; 			SEMICOLON DELIMITER
+
+23			amp 			IDENTIFIER
+			= 			OPERATOR
+			a 			IDENTIFIER
+			& 			OPERATOR
+			b 			IDENTIFIER
+			; 			SEMICOLON DELIMITER
+
+24			orr 			IDENTIFIER
+			= 			OPERATOR
+			a 			IDENTIFIER
+			| 			OPERATOR
+			b 			IDENTIFIER
+			; 			SEMICOLON DELIMITER
+
+25
+26			X 			IDENTIFIER
+			. 			DOT DELIMITER
+			first 			IDENTIFIER
+			= 			OPERATOR
+			a 			IDENTIFIER
+			; 			SEMICOLON DELIMITER
+
+27			X 			IDENTIFIER
+			. 			DOT DELIMITER
+			second 			IDENTIFIER
+			= 			OPERATOR
+			b 			IDENTIFIER
+			; 			SEMICOLON DELIMITER
+
+28
+29			func 			IDENTIFIER
+			( 			OPENING BRACKETS
+			X 			IDENTIFIER
+			. 			DOT DELIMITER
+			first 			IDENTIFIER
+			, 			COMMA DELIMITER
+			X 			IDENTIFIER
+			. 			DOT DELIMITER
+			second 			IDENTIFIER
+			) 			CLOSING BRACKETS
+			; 			SEMICOLON DELIMITER
+
+30
+31			return 			KEYWORD
+			( 			OPENING BRACKETS
+			0 			NUMBER CONSTANT
+			) 			CLOSING BRACKETS
+			; 			SEMICOLON DELIMITER
+
+32
+33			} 			CLOSING BRACES
+
+
+SYMBOL TABLE
+
+	X		IDENTIFIER
+	struct		KEYWORD
+	a		IDENTIFIER
+	b		IDENTIFIER
+	first		IDENTIFIER
+	duo		IDENTIFIER
+	orr		IDENTIFIER
+	prod		IDENTIFIER
+	diff		IDENTIFIER
+	return		KEYWORD
+	int		KEYWORD
+	float		KEYWORD
+	sum		IDENTIFIER
+	main		KEYWORD
+	func		IDENTIFIER
+	amp		IDENTIFIER
+	second		IDENTIFIER
+	printf		IDENTIFIER
+	div		IDENTIFIER
+	void		KEYWORD
+
+
+CONSTANT TABLE
+
+	"Integer value : %d\n"		STRING CONSTANT
+	10		NUMBER CONSTANT
+	"Float value : %f\n"		STRING CONSTANT
+	0		NUMBER CONSTANT
+	6		NUMBER CONSTANT

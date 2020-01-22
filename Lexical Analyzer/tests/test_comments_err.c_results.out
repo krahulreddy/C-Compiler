@@ -1,0 +1,47 @@
+Line			Lexeme			Token Class
+1		#include <stdio.h> 		Pre Processor directive
+
+2
+3			int 			KEYWORD
+			sum 			IDENTIFIER
+			( 			OPENING BRACKETS
+			int 			KEYWORD
+			a 			IDENTIFIER
+			, 			COMMA DELIMITER
+			int 			KEYWORD
+			b 			IDENTIFIER
+			) 			CLOSING BRACKETS
+
+4			{ 			OPENING BRACES
+
+5			int 			KEYWORD
+			sum 			IDENTIFIER
+			= 			OPERATOR
+			a 			IDENTIFIER
+			+ 			OPERATOR
+			b 			IDENTIFIER
+			; 			SEMICOLON DELIMITER
+
+6			/*
+    This is an example of a function
+        /*
+        The function here is used to add two numbers
+    */ 			MULTI LINE COMMENT
+
+7XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+ERROR: at line no. 7
+	*
+	^^
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+SYMBOL TABLE
+
+	a		IDENTIFIER
+	b		IDENTIFIER
+	int		KEYWORD
+	sum		IDENTIFIER
+
+
+CONSTANT TABLE
+

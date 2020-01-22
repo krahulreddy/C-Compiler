@@ -1,0 +1,145 @@
+Line			Lexeme			Token Class
+1		#include <stdio.h> 		Pre Processor directive
+
+2		#define max 10 		Macro
+
+3
+4			void 			KEYWORD
+			main 			KEYWORD
+			( 			OPENING BRACKETS
+			) 			CLOSING BRACKETS
+
+5			{ 			OPENING BRACES
+
+6			int 			KEYWORD
+			a 			IDENTIFIER
+			; 			SEMICOLON DELIMITER
+
+7			float 			KEYWORD
+			b 			IDENTIFIER
+			; 			SEMICOLON DELIMITER
+
+8			char 			KEYWORD
+			ch 			IDENTIFIER
+			= 			OPERATOR
+			'Y' 			Character CONSTANT
+			; 			SEMICOLON DELIMITER
+
+9
+10			printf 			IDENTIFIER
+			( 			OPENING BRACKETS
+			"Enter two numbers : \n" 			STRING CONSTANT
+			) 			CLOSING BRACKETS
+			; 			SEMICOLON DELIMITER
+
+11			scanf 			IDENTIFIER
+			( 			OPENING BRACKETS
+			"%d %f" 			STRING CONSTANT
+			, 			COMMA DELIMITER
+			& 			OPERATOR
+			a 			IDENTIFIER
+			, 			COMMA DELIMITER
+			& 			OPERATOR
+			b 			IDENTIFIER
+			) 			CLOSING BRACKETS
+			; 			SEMICOLON DELIMITER
+
+12
+13			while 			KEYWORD
+			( 			OPENING BRACKETS
+			ch 			IDENTIFIER
+			== 			OPERATOR
+			'Y' 			Character CONSTANT
+			) 			CLOSING BRACKETS
+
+14			{ 			OPENING BRACES
+
+15			a 			IDENTIFIER
+			++ 			OPERATOR
+			; 			SEMICOLON DELIMITER
+
+16			b 			IDENTIFIER
+			++ 			OPERATOR
+			; 			SEMICOLON DELIMITER
+
+17
+18			for 			KEYWORD
+			( 			OPENING BRACKETS
+			float 			KEYWORD
+			i 			IDENTIFIER
+			= 			OPERATOR
+			a 			IDENTIFIER
+			; 			SEMICOLON DELIMITER
+			i 			IDENTIFIER
+			<= 			OPERATOR
+			b 			IDENTIFIER
+			; 			SEMICOLON DELIMITER
+			i 			IDENTIFIER
+			++ 			OPERATOR
+			) 			CLOSING BRACKETS
+
+19			{ 			OPENING BRACES
+
+20			printf 			IDENTIFIER
+			( 			OPENING BRACKETS
+			"%f | " 			STRING CONSTANT
+			, 			COMMA DELIMITER
+			i 			IDENTIFIER
+			) 			CLOSING BRACKETS
+			; 			SEMICOLON DELIMITER
+
+21			} 			CLOSING BRACES
+
+22			printf 			IDENTIFIER
+			( 			OPENING BRACKETS
+			"END_LINE\n" 			STRING CONSTANT
+			) 			CLOSING BRACKETS
+			; 			SEMICOLON DELIMITER
+
+23
+24			printf 			IDENTIFIER
+			( 			OPENING BRACKETS
+			"Do you wish to continue : (Y / N)\n" 			STRING CONSTANT
+			) 			CLOSING BRACKETS
+			; 			SEMICOLON DELIMITER
+
+25			scanf 			IDENTIFIER
+			( 			OPENING BRACKETS
+			"%s" 			STRING CONSTANT
+			, 			COMMA DELIMITER
+			& 			OPERATOR
+			ch 			IDENTIFIER
+			) 			CLOSING BRACKETS
+			; 			SEMICOLON DELIMITER
+
+26			} 			CLOSING BRACES
+
+27			} 			CLOSING BRACES
+
+
+SYMBOL TABLE
+
+	a		IDENTIFIER
+	b		IDENTIFIER
+	i		IDENTIFIER
+	scanf		IDENTIFIER
+	for		KEYWORD
+	char		KEYWORD
+	ch		IDENTIFIER
+	int		KEYWORD
+	float		KEYWORD
+	main		KEYWORD
+	printf		IDENTIFIER
+	while		KEYWORD
+	void		KEYWORD
+
+
+CONSTANT TABLE
+
+	"Do you wish to continue : (Y / N)\n"		STRING CONSTANT
+	"Enter two numbers : \n"		STRING CONSTANT
+	'Y'		Character CONSTANT
+	"%s"		STRING CONSTANT
+	"END_LINE\n"		STRING CONSTANT
+	"%f | "		STRING CONSTANT
+	"%d %f"		STRING CONSTANT

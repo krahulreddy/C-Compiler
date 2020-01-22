@@ -6,9 +6,9 @@ int binarySearch(int arr[], int f, int l, int x)
     {
         int m = f + (l - f)/2;
         
-        if(arr[m] == x)
+        if(arr[ m ] == x)
             return(m);
-        else if(arr[m] > x)
+        else if(arr[ m ] > x)
             return(binarySearch(arr, f, m - 1, x));
         else
             return(binarySearch(arr, m + 1, l, x));
@@ -23,12 +23,12 @@ int main()
     printf("Enter the size of the array : \n");
     scanf("%d", &num);
     
-    int arr[num];
+    int arr[ num ];
     
     printf("Enter the elements of the array in ascending order : \n");
     for(i = 0; i < num; i++)
     {
-        scanf("%d", &arr[i]);
+        scanf("%d", &arr[ i ]);
     }
     
     printf("Enter the element to be searched for : \n");

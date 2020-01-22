@@ -1,0 +1,132 @@
+Line			Lexeme			Token Class
+1		#include <stdio.h> 		Pre Processor directive
+
+2
+3			int 			KEYWORD
+			main 			KEYWORD
+			( 			OPENING BRACKETS
+			) 			CLOSING BRACKETS
+
+4			{ 			OPENING BRACES
+
+5			int 			KEYWORD
+			num 			IDENTIFIER
+			; 			SEMICOLON DELIMITER
+
+6
+7			printf 			IDENTIFIER
+			( 			OPENING BRACKETS
+			"Enter any number : \n" 			STRING CONSTANT
+			) 			CLOSING BRACKETS
+			; 			SEMICOLON DELIMITER
+
+8			scanf 			IDENTIFIER
+			( 			OPENING BRACKETS
+			"%d" 			STRING CONSTANT
+			, 			COMMA DELIMITER
+			& 			OPERATOR
+			num 			IDENTIFIER
+			) 			CLOSING BRACKETS
+			; 			SEMICOLON DELIMITER
+
+9
+10			if 			KEYWORD
+			( 			OPENING BRACKETS
+			num 			IDENTIFIER
+			% 			OPERATOR
+			2 			NUMBER CONSTANT
+			== 			OPERATOR
+			0 			NUMBER CONSTANT
+			) 			CLOSING BRACKETS
+
+11			{ 			OPENING BRACES
+
+12			printf 			IDENTIFIER
+			( 			OPENING BRACKETS
+			"Number is even\n" 			STRING CONSTANT
+			) 			CLOSING BRACKETS
+			; 			SEMICOLON DELIMITER
+
+13			if 			KEYWORD
+			( 			OPENING BRACKETS
+			num 			IDENTIFIER
+			% 			OPERATOR
+			5 			NUMBER CONSTANT
+			== 			OPERATOR
+			0 			NUMBER CONSTANT
+			) 			CLOSING BRACKETS
+
+14			{ 			OPENING BRACES
+
+15			printf 			IDENTIFIER
+			( 			OPENING BRACKETS
+			"Number is divisible by 10\n" 			STRING CONSTANT
+			) 			CLOSING BRACKETS
+			; 			SEMICOLON DELIMITER
+
+16			} 			CLOSING BRACES
+
+17			else 			KEYWORD
+			if 			KEYWORD
+			( 			OPENING BRACKETS
+			num 			IDENTIFIER
+			% 			OPERATOR
+			3 			NUMBER CONSTANT
+			) 			CLOSING BRACKETS
+
+18			{ 			OPENING BRACES
+
+19			printf 			IDENTIFIER
+			( 			OPENING BRACKETS
+			"Number is divisible by 6\n" 			STRING CONSTANT
+			) 			CLOSING BRACKETS
+			; 			SEMICOLON DELIMITER
+
+20			} 			CLOSING BRACES
+
+21			} 			CLOSING BRACES
+
+22			else 			KEYWORD
+
+23			{ 			OPENING BRACES
+
+24			printf 			IDENTIFIER
+			( 			OPENING BRACKETS
+			"Number is odd" 			STRING CONSTANT
+			) 			CLOSING BRACKETS
+			; 			SEMICOLON DELIMITER
+
+25			} 			CLOSING BRACES
+
+26
+27			int 			KEYWORD
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+ERROR: at line no. 27
+	!
+	^^
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+SYMBOL TABLE
+
+	num		IDENTIFIER
+	scanf		IDENTIFIER
+	if		KEYWORD
+	int		KEYWORD
+	main		KEYWORD
+	else		KEYWORD
+	printf		IDENTIFIER
+
+
+CONSTANT TABLE
+
+	"Number is odd"		STRING CONSTANT
+	"Number is even\n"		STRING CONSTANT
+	"%d"		STRING CONSTANT
+	"Number is divisible by 6\n"		STRING CONSTANT
+	"Number is divisible by 10\n"		STRING CONSTANT
+	"Enter any number : \n"		STRING CONSTANT
+	0		NUMBER CONSTANT
+	2		NUMBER CONSTANT
+	3		NUMBER CONSTANT
+	5		NUMBER CONSTANT
