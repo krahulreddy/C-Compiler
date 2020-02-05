@@ -858,33 +858,29 @@ char *yytext;
 		}
 	}
 
-	void printTable(int printMode)
+	void printTables()
 	{
-		if(printMode == 0)
+		printf("\n\nSYMBOL TABLE\n\n");
+		for(int i = 0 ; i < 1001 ; i++)
 		{
-			for(int i = 0 ; i < 1001 ; i++)
+			if(ST[i].length == 0)
 			{
-				if(ST[i].length == 0)
-				{
-					continue;
-				}
-
-				printf("\t%s\t\t%s\n",ST[i].name, ST[i].type);
+				continue;
 			}
+
+			printf("\t%s\t\t%s\n",ST[i].name, ST[i].type);
 		}
-		else
+		printf("\n\nCONSTANT TABLE\n\n");
+		for(int i = 0 ; i < 1001 ; i++)
 		{
-			for(int i = 0 ; i < 1001 ; i++)
-			{
-				if(CT[i].length == 0)
-					continue;
+			if(CT[i].length == 0)
+				continue;
 
-				printf("\t%s\t\t%s\n",CT[i].name, CT[i].type);
-			}
+			printf("\t%s\t\t%s\n",CT[i].name, CT[i].type);
 		}
 	}
-#line 887 "lex.yy.c"
-#line 888 "lex.yy.c"
+#line 883 "lex.yy.c"
+#line 884 "lex.yy.c"
 
 #define INITIAL 0
 
@@ -1107,10 +1103,10 @@ YY_DECL
 		}
 
 	{
-#line 181 "lex-analyzer.l"
+#line 177 "lex-analyzer.l"
 
 
-#line 1114 "lex.yy.c"
+#line 1110 "lex.yy.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -1193,7 +1189,7 @@ do_action:	/* This label is used only to access EOF actions. */
 case 1:
 /* rule 1 can match eol */
 YY_RULE_SETUP
-#line 183 "lex-analyzer.l"
+#line 179 "lex-analyzer.l"
 {yylineno++; printf("\n%d", yylineno);}
 	YY_BREAK
 case 2:
@@ -1203,7 +1199,7 @@ YY_LINENO_REWIND_TO(yy_cp - 1);
 (yy_c_buf_p) = yy_cp -= 1;
 YY_DO_BEFORE_ACTION; /* set up yytext again */
 YY_RULE_SETUP
-#line 184 "lex-analyzer.l"
+#line 180 "lex-analyzer.l"
 {printf("\t\t%s \t\tPre Processor directive\n",yytext);}
 	YY_BREAK
 case 3:
@@ -1213,79 +1209,79 @@ YY_LINENO_REWIND_TO(yy_cp - 1);
 (yy_c_buf_p) = yy_cp -= 1;
 YY_DO_BEFORE_ACTION; /* set up yytext again */
 YY_RULE_SETUP
-#line 185 "lex-analyzer.l"
+#line 181 "lex-analyzer.l"
 {printf("\t\t%s \t\tMacro\n",yytext);}
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 186 "lex-analyzer.l"
+#line 182 "lex-analyzer.l"
 {printf("\t\t\t%s \t\t\t- SINGLE LINE COMMENT\n", yytext);}				
 	YY_BREAK
 case 5:
 /* rule 5 can match eol */
 YY_RULE_SETUP
-#line 187 "lex-analyzer.l"
+#line 183 "lex-analyzer.l"
 {printf("\t\t\t%s \t\t\tMULTI LINE COMMENT\n", yytext);}
 	YY_BREAK
 case 6:
 /* rule 6 can match eol */
 YY_RULE_SETUP
-#line 188 "lex-analyzer.l"
+#line 184 "lex-analyzer.l"
 ;
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 189 "lex-analyzer.l"
+#line 185 "lex-analyzer.l"
 {printf("\t\t\t%s \t\t\tSEMICOLON DELIMITER\n", yytext);}
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 190 "lex-analyzer.l"
+#line 186 "lex-analyzer.l"
 {printf("\t\t\t%s \t\t\tCOMMA DELIMITER\n", yytext);}
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 191 "lex-analyzer.l"
+#line 187 "lex-analyzer.l"
 {printf("\t\t\t%s \t\t\tOPENING BRACES\n", yytext);}
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 192 "lex-analyzer.l"
+#line 188 "lex-analyzer.l"
 {printf("\t\t\t%s \t\t\tCLOSING BRACES\n", yytext);}
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 193 "lex-analyzer.l"
+#line 189 "lex-analyzer.l"
 {printf("\t\t\t%s \t\t\tOPENING BRACKETS\n", yytext);}
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 194 "lex-analyzer.l"
+#line 190 "lex-analyzer.l"
 {printf("\t\t\t%s \t\t\tCLOSING BRACKETS\n", yytext);}
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 195 "lex-analyzer.l"
+#line 191 "lex-analyzer.l"
 {printf("\t\t\t%s \t\t\tSQUARE OPENING BRACKETS\n", yytext);}
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 196 "lex-analyzer.l"
+#line 192 "lex-analyzer.l"
 {printf("\t\t\t%s \t\t\tSQUARE CLOSING BRACKETS\n", yytext);}
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 197 "lex-analyzer.l"
+#line 193 "lex-analyzer.l"
 {printf("\t\t\t%s \t\t\tCOLON DELIMITER\n", yytext);}
 	YY_BREAK
 case 16:
 YY_RULE_SETUP
-#line 198 "lex-analyzer.l"
+#line 194 "lex-analyzer.l"
 {printf("\t\t\t%s \t\t\tFSLASH\n", yytext);}
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
-#line 199 "lex-analyzer.l"
+#line 195 "lex-analyzer.l"
 {printf("\t\t\t%s \t\t\tDOT DELIMITER\n", yytext);}
 	YY_BREAK
 case 18:
@@ -1295,7 +1291,7 @@ YY_LINENO_REWIND_TO(yy_cp - 1);
 (yy_c_buf_p) = yy_cp -= 1;
 YY_DO_BEFORE_ACTION; /* set up yytext again */
 YY_RULE_SETUP
-#line 201 "lex-analyzer.l"
+#line 197 "lex-analyzer.l"
 {printf("\t\t\t%s \t\t\tKEYWORD\n", yytext); insert(yytext, "KEYWORD", 0);}
 	YY_BREAK
 case 19:
@@ -1303,7 +1299,7 @@ case 19:
 (yy_c_buf_p) = yy_cp -= 1;
 YY_DO_BEFORE_ACTION; /* set up yytext again */
 YY_RULE_SETUP
-#line 202 "lex-analyzer.l"
+#line 198 "lex-analyzer.l"
 {printf("\t\t\t%s \t\t\tSTRING CONSTANT\n", yytext); insert(yytext,"STRING CONSTANT", 1);}
 	YY_BREAK
 case 20:
@@ -1311,7 +1307,7 @@ case 20:
 (yy_c_buf_p) = yy_cp = yy_bp + 3;
 YY_DO_BEFORE_ACTION; /* set up yytext again */
 YY_RULE_SETUP
-#line 203 "lex-analyzer.l"
+#line 199 "lex-analyzer.l"
 {printf("\t\t\t%s \t\t\tCharacter CONSTANT\n", yytext); insert(yytext,"Character CONSTANT", 1);}
 	YY_BREAK
 case 21:
@@ -1319,13 +1315,13 @@ case 21:
 (yy_c_buf_p) = yy_cp -= 1;
 YY_DO_BEFORE_ACTION; /* set up yytext again */
 YY_RULE_SETUP
-#line 204 "lex-analyzer.l"
+#line 200 "lex-analyzer.l"
 {printf("\t\t\t%s \t\t\tARRAY IDENTIFIER\n", yytext); insert(yytext, "IDENTIFIER", 0);}
 	YY_BREAK
 case 22:
 /* rule 22 can match eol */
 YY_RULE_SETUP
-#line 206 "lex-analyzer.l"
+#line 202 "lex-analyzer.l"
 {printf("\t\t\t%s \t\t\tOPERATOR\n", yytext);} 
 	YY_BREAK
 case 23:
@@ -1335,7 +1331,7 @@ YY_LINENO_REWIND_TO(yy_cp - 1);
 (yy_c_buf_p) = yy_cp -= 1;
 YY_DO_BEFORE_ACTION; /* set up yytext again */
 YY_RULE_SETUP
-#line 208 "lex-analyzer.l"
+#line 204 "lex-analyzer.l"
 {printf("\t\t\t%s \t\t\tNUMBER CONSTANT\n", yytext); insert(yytext, "NUMBER CONSTANT", 1);}
 	YY_BREAK
 case 24:
@@ -1345,7 +1341,7 @@ YY_LINENO_REWIND_TO(yy_cp - 1);
 (yy_c_buf_p) = yy_cp -= 1;
 YY_DO_BEFORE_ACTION; /* set up yytext again */
 YY_RULE_SETUP
-#line 209 "lex-analyzer.l"
+#line 205 "lex-analyzer.l"
 {printf("\t\t\t%s \t\t\tFloating CONSTANT\n", yytext); insert(yytext, "Floating CONSTANT", 1);}
 	YY_BREAK
 case 25:
@@ -1355,12 +1351,12 @@ YY_LINENO_REWIND_TO(yy_cp - 1);
 (yy_c_buf_p) = yy_cp -= 1;
 YY_DO_BEFORE_ACTION; /* set up yytext again */
 YY_RULE_SETUP
-#line 210 "lex-analyzer.l"
+#line 206 "lex-analyzer.l"
 {printf("\t\t\t%s \t\t\tIDENTIFIER\n", yytext); insert(yytext, "IDENTIFIER", 0);}
 	YY_BREAK
 case 26:
 YY_RULE_SETUP
-#line 213 "lex-analyzer.l"
+#line 209 "lex-analyzer.l"
 {
 	printf("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\n");
 	if(yytext[0]=='#')
@@ -1386,10 +1382,10 @@ YY_RULE_SETUP
 	YY_BREAK
 case 27:
 YY_RULE_SETUP
-#line 236 "lex-analyzer.l"
+#line 232 "lex-analyzer.l"
 ECHO;
 	YY_BREAK
-#line 1393 "lex.yy.c"
+#line 1389 "lex.yy.c"
 			case YY_STATE_EOF(INITIAL):
 				yyterminate();
 
@@ -2367,7 +2363,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 236 "lex-analyzer.l"
+#line 232 "lex-analyzer.l"
 
 
 
@@ -2384,10 +2380,7 @@ int main(int argc , char **argv){
 	printf("Line\t\t\tLexeme\t\t\tToken Class\n1"); 
 	yylex();
 	
-	printf("\n\nSYMBOL TABLE\n\n");
-	printTable(0);
-	printf("\n\nCONSTANT TABLE\n\n");
-	printTable(1);
+	printTables();
 }
 
 int yywrap(){

@@ -144,29 +144,25 @@
 		}
 	}
 
-	void printTable(int printMode)
+	void printTables()
 	{
-		if(printMode == 0)
+		printf("\n\nSYMBOL TABLE\n\n");
+		for(int i = 0 ; i < 1001 ; i++)
 		{
-			for(int i = 0 ; i < 1001 ; i++)
+			if(ST[i].length == 0)
 			{
-				if(ST[i].length == 0)
-				{
-					continue;
-				}
-
-				printf("\t%s\t\t%s\n",ST[i].name, ST[i].type);
+				continue;
 			}
+
+			printf("\t%s\t\t%s\n",ST[i].name, ST[i].type);
 		}
-		else
+		printf("\n\nCONSTANT TABLE\n\n");
+		for(int i = 0 ; i < 1001 ; i++)
 		{
-			for(int i = 0 ; i < 1001 ; i++)
-			{
-				if(CT[i].length == 0)
-					continue;
+			if(CT[i].length == 0)
+				continue;
 
-				printf("\t%s\t\t%s\n",CT[i].name, CT[i].type);
-			}
+			printf("\t%s\t\t%s\n",CT[i].name, CT[i].type);
 		}
 	}
 %}
@@ -249,10 +245,7 @@ int main(int argc , char **argv){
 	printf("Line\t\t\tLexeme\t\t\tToken Class\n1"); 
 	yylex();
 	
-	printf("\n\nSYMBOL TABLE\n\n");
-	printTable(0);
-	printf("\n\nCONSTANT TABLE\n\n");
-	printTable(1);
+	printTables();
 }
 
 int yywrap(){
