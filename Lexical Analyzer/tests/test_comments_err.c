@@ -8,7 +8,7 @@ int sum(int a, int b)
         /*
         The function here is used to add two numbers
     */
-    */
+    +//+
 
     return(sum);
 }

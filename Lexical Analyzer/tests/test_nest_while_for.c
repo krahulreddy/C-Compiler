@@ -10,7 +10,7 @@ void main()
     printf("Enter two numbers : \n");
     scanf("%d %f", &a, &b);
 
-    while(ch == 'Y')
+    while(ch == 95)
     {
         a++;
         b++;

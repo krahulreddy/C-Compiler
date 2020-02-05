@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-struct duo{
+union duo{
     int first;
     float second;
 }X;
