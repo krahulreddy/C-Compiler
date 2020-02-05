@@ -49,7 +49,7 @@ Line			Lexeme			Token Class
 			( 			OPENING BRACKETS
 			ch 			IDENTIFIER
 			== 			OPERATOR
-			'Y' 			Character CONSTANT
+			95 			NUMBER CONSTANT
 			) 			CLOSING BRACKETS
 
 14			{ 			OPENING BRACES
@@ -119,27 +119,28 @@ Line			Lexeme			Token Class
 
 SYMBOL TABLE
 
-	a		IDENTIFIER
-	b		IDENTIFIER
-	i		IDENTIFIER
-	scanf		IDENTIFIER
-	for		KEYWORD
-	char		KEYWORD
-	ch		IDENTIFIER
-	int		KEYWORD
-	float		KEYWORD
-	main		KEYWORD
-	printf		IDENTIFIER
-	while		KEYWORD
-	void		KEYWORD
+	a			IDENTIFIER
+	b			IDENTIFIER
+	i			IDENTIFIER
+	scanf			IDENTIFIER
+	for			KEYWORD
+	char			KEYWORD
+	ch			IDENTIFIER
+	int			KEYWORD
+	float			KEYWORD
+	main			KEYWORD
+	printf			IDENTIFIER
+	while			KEYWORD
+	void			KEYWORD
 
 
 CONSTANT TABLE
 
-	"Do you wish to continue : (Y / N)\n"		STRING CONSTANT
-	"Enter two numbers : \n"		STRING CONSTANT
-	'Y'		Character CONSTANT
-	"%s"		STRING CONSTANT
-	"END_LINE\n"		STRING CONSTANT
-	"%f | "		STRING CONSTANT
-	"%d %f"		STRING CONSTANT
+	"Do you wish to continue : (Y / N)\n"			STRING CONSTANT
+	"Enter two numbers : \n"			STRING CONSTANT
+	'Y'			Character CONSTANT
+	"%s"			STRING CONSTANT
+	"END_LINE\n"			STRING CONSTANT
+	95			NUMBER CONSTANT
+	"%f | "			STRING CONSTANT
+	"%d %f"			STRING CONSTANT

@@ -1,8 +1,10 @@
 Line			Lexeme			Token Class
-1		#include <stdio.h> 		Pre Processor directive
+1			//542265 			- SINGLE LINE COMMENT
 
-2
-3			int 			KEYWORD
+2		#include <stdio.h> 		Pre Processor directive
+
+3
+4			int 			KEYWORD
 			binarySearch 			IDENTIFIER
 			( 			OPENING BRACKETS
 			int 			KEYWORD
@@ -20,18 +22,18 @@ Line			Lexeme			Token Class
 			x 			IDENTIFIER
 			) 			CLOSING BRACKETS
 
-4			{ 			OPENING BRACES
+5			{ 			OPENING BRACES
 
-5			if 			KEYWORD
+6			if 			KEYWORD
 			( 			OPENING BRACKETS
 			l 			IDENTIFIER
 			>= 			OPERATOR
 			f 			IDENTIFIER
 			) 			CLOSING BRACKETS
 
-6			{ 			OPENING BRACES
+7			{ 			OPENING BRACES
 
-7			int 			KEYWORD
+8			int 			KEYWORD
 			m 			IDENTIFIER
 			= 			OPERATOR
 			f 			IDENTIFIER
@@ -45,8 +47,8 @@ Line			Lexeme			Token Class
 			2 			NUMBER CONSTANT
 			; 			SEMICOLON DELIMITER
 
-8
-9			if 			KEYWORD
+9
+10			if 			KEYWORD
 			( 			OPENING BRACKETS
 			arr 			ARRAY IDENTIFIER
 			[ 			SQUARE OPENING BRACKETS
@@ -56,13 +58,13 @@ Line			Lexeme			Token Class
 			x 			IDENTIFIER
 			) 			CLOSING BRACKETS
 
-10			return 			KEYWORD
+11			return 			KEYWORD
 			( 			OPENING BRACKETS
 			m 			IDENTIFIER
 			) 			CLOSING BRACKETS
 			; 			SEMICOLON DELIMITER
 
-11			else 			KEYWORD
+12			else 			KEYWORD
 			if 			KEYWORD
 			( 			OPENING BRACKETS
 			arr 			ARRAY IDENTIFIER
@@ -73,7 +75,7 @@ Line			Lexeme			Token Class
 			x 			IDENTIFIER
 			) 			CLOSING BRACKETS
 
-12			return 			KEYWORD
+13			return 			KEYWORD
 			( 			OPENING BRACKETS
 			binarySearch 			IDENTIFIER
 			( 			OPENING BRACKETS
@@ -90,9 +92,9 @@ Line			Lexeme			Token Class
 			) 			CLOSING BRACKETS
 			; 			SEMICOLON DELIMITER
 
-13			else 			KEYWORD
+14			else 			KEYWORD
 
-14			return 			KEYWORD
+15			return 			KEYWORD
 			( 			OPENING BRACKETS
 			binarySearch 			IDENTIFIER
 			( 			OPENING BRACKETS
@@ -109,26 +111,26 @@ Line			Lexeme			Token Class
 			) 			CLOSING BRACKETS
 			; 			SEMICOLON DELIMITER
 
-15			} 			CLOSING BRACES
+16			} 			CLOSING BRACES
 
-16
-17			return 			KEYWORD
+17
+18			return 			KEYWORD
 			( 			OPENING BRACKETS
 			- 			OPERATOR
 			1 			NUMBER CONSTANT
 			) 			CLOSING BRACKETS
 			; 			SEMICOLON DELIMITER
 
-18			} 			CLOSING BRACES
+19			} 			CLOSING BRACES
 
-19			int 			KEYWORD
+20			int 			KEYWORD
 			main 			KEYWORD
 			( 			OPENING BRACKETS
 			) 			CLOSING BRACKETS
 
-20			{ 			OPENING BRACES
+21			{ 			OPENING BRACES
 
-21			int 			KEYWORD
+22			int 			KEYWORD
 			num 			IDENTIFIER
 			, 			COMMA DELIMITER
 			x 			IDENTIFIER
@@ -138,14 +140,14 @@ Line			Lexeme			Token Class
 			j 			IDENTIFIER
 			; 			SEMICOLON DELIMITER
 
-22
-23			printf 			IDENTIFIER
+23
+24			printf 			IDENTIFIER
 			( 			OPENING BRACKETS
 			"Enter the size of the array : \n" 			STRING CONSTANT
 			) 			CLOSING BRACKETS
 			; 			SEMICOLON DELIMITER
 
-24			scanf 			IDENTIFIER
+25			scanf 			IDENTIFIER
 			( 			OPENING BRACKETS
 			"%d" 			STRING CONSTANT
 			, 			COMMA DELIMITER
@@ -154,22 +156,22 @@ Line			Lexeme			Token Class
 			) 			CLOSING BRACKETS
 			; 			SEMICOLON DELIMITER
 
-25
-26			int 			KEYWORD
+26
+27			int 			KEYWORD
 			arr 			ARRAY IDENTIFIER
 			[ 			SQUARE OPENING BRACKETS
 			num 			IDENTIFIER
 			] 			SQUARE CLOSING BRACKETS
 			; 			SEMICOLON DELIMITER
 
-27
-28			printf 			IDENTIFIER
+28
+29			printf 			IDENTIFIER
 			( 			OPENING BRACKETS
 			"Enter the elements of the array in ascending order : \n" 			STRING CONSTANT
 			) 			CLOSING BRACKETS
 			; 			SEMICOLON DELIMITER
 
-29			for 			KEYWORD
+30			for 			KEYWORD
 			( 			OPENING BRACKETS
 			i 			IDENTIFIER
 			= 			OPERATOR
@@ -183,9 +185,9 @@ Line			Lexeme			Token Class
 			++ 			OPERATOR
 			) 			CLOSING BRACKETS
 
-30			{ 			OPENING BRACES
+31			{ 			OPENING BRACES
 
-31			scanf 			IDENTIFIER
+32			scanf 			IDENTIFIER
 			( 			OPENING BRACKETS
 			"%d" 			STRING CONSTANT
 			, 			COMMA DELIMITER
@@ -197,16 +199,16 @@ Line			Lexeme			Token Class
 			) 			CLOSING BRACKETS
 			; 			SEMICOLON DELIMITER
 
-32			} 			CLOSING BRACES
+33			} 			CLOSING BRACES
 
-33
-34			printf 			IDENTIFIER
+34
+35			printf 			IDENTIFIER
 			( 			OPENING BRACKETS
 			"Enter the element to be searched for : \n" 			STRING CONSTANT
 			) 			CLOSING BRACKETS
 			; 			SEMICOLON DELIMITER
 
-35			scanf 			IDENTIFIER
+36			scanf 			IDENTIFIER
 			( 			OPENING BRACKETS
 			"%d" 			STRING CONSTANT
 			, 			COMMA DELIMITER
@@ -215,8 +217,8 @@ Line			Lexeme			Token Class
 			) 			CLOSING BRACKETS
 			; 			SEMICOLON DELIMITER
 
-36
-37			i 			IDENTIFIER
+37
+38			i 			IDENTIFIER
 			= 			OPERATOR
 			binarySearch 			IDENTIFIER
 			( 			OPENING BRACKETS
@@ -230,8 +232,8 @@ Line			Lexeme			Token Class
 			) 			CLOSING BRACKETS
 			; 			SEMICOLON DELIMITER
 
-38
-39			if 			KEYWORD
+39
+40			if 			KEYWORD
 			( 			OPENING BRACKETS
 			i 			IDENTIFIER
 			== 			OPERATOR
@@ -239,7 +241,7 @@ Line			Lexeme			Token Class
 			1 			NUMBER CONSTANT
 			) 			CLOSING BRACKETS
 
-40			printf 			IDENTIFIER
+41			printf 			IDENTIFIER
 			( 			OPENING BRACKETS
 			"%d does not exist in the array\n" 			STRING CONSTANT
 			, 			COMMA DELIMITER
@@ -247,9 +249,9 @@ Line			Lexeme			Token Class
 			) 			CLOSING BRACKETS
 			; 			SEMICOLON DELIMITER
 
-41			else 			KEYWORD
+42			else 			KEYWORD
 
-42			printf 			IDENTIFIER
+43			printf 			IDENTIFIER
 			( 			OPENING BRACKETS
 			"%d exists at the location %d in the array\n" 			STRING CONSTANT
 			, 			COMMA DELIMITER
@@ -261,47 +263,47 @@ Line			Lexeme			Token Class
 			) 			CLOSING BRACKETS
 			; 			SEMICOLON DELIMITER
 
-43
-44			return 			KEYWORD
+44
+45			return 			KEYWORD
 			( 			OPENING BRACKETS
 			0 			NUMBER CONSTANT
 			) 			CLOSING BRACKETS
 			; 			SEMICOLON DELIMITER
 
-45
 46
-47			} 			CLOSING BRACES
+47
+48			} 			CLOSING BRACES
 
 
 SYMBOL TABLE
 
-	f		IDENTIFIER
-	i		IDENTIFIER
-	j		IDENTIFIER
-	l		IDENTIFIER
-	m		IDENTIFIER
-	x		IDENTIFIER
-	num		IDENTIFIER
-	binarySearch		IDENTIFIER
-	scanf		IDENTIFIER
-	for		KEYWORD
-	return		KEYWORD
-	if		KEYWORD
-	int		KEYWORD
-	main		KEYWORD
-	arr		IDENTIFIER
-	else		KEYWORD
-	printf		IDENTIFIER
+	f			IDENTIFIER
+	i			IDENTIFIER
+	j			IDENTIFIER
+	l			IDENTIFIER
+	m			IDENTIFIER
+	x			IDENTIFIER
+	num			IDENTIFIER
+	binarySearch			IDENTIFIER
+	scanf			IDENTIFIER
+	for			KEYWORD
+	return			KEYWORD
+	if			KEYWORD
+	int			KEYWORD
+	main			KEYWORD
+	arr			IDENTIFIER
+	else			KEYWORD
+	printf			IDENTIFIER
 
 
 CONSTANT TABLE
 
-	"%d exists at the location %d in the array\n"		STRING CONSTANT
-	"Enter the element to be searched for : \n"		STRING CONSTANT
-	"Enter the elements of the array in ascending order : \n"		STRING CONSTANT
-	"Enter the size of the array : \n"		STRING CONSTANT
-	"%d"		STRING CONSTANT
-	"%d does not exist in the array\n"		STRING CONSTANT
-	0		NUMBER CONSTANT
-	1		NUMBER CONSTANT
-	2		NUMBER CONSTANT
+	"%d exists at the location %d in the array\n"			STRING CONSTANT
+	"Enter the element to be searched for : \n"			STRING CONSTANT
+	"Enter the elements of the array in ascending order : \n"			STRING CONSTANT
+	"Enter the size of the array : \n"			STRING CONSTANT
+	"%d"			STRING CONSTANT
+	"%d does not exist in the array\n"			STRING CONSTANT
+	0			NUMBER CONSTANT
+	1			NUMBER CONSTANT
+	2			NUMBER CONSTANT

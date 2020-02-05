@@ -2,7 +2,7 @@ Line			Lexeme			Token Class
 1		#include <stdio.h> 		Pre Processor directive
 
 2
-3			struct 			KEYWORD
+3			union 			KEYWORD
 			duo 			IDENTIFIER
 			{ 			OPENING BRACES
 
@@ -168,32 +168,32 @@ Line			Lexeme			Token Class
 
 SYMBOL TABLE
 
-	X		IDENTIFIER
-	struct		KEYWORD
-	a		IDENTIFIER
-	b		IDENTIFIER
-	first		IDENTIFIER
-	duo		IDENTIFIER
-	orr		IDENTIFIER
-	prod		IDENTIFIER
-	diff		IDENTIFIER
-	return		KEYWORD
-	int		KEYWORD
-	float		KEYWORD
-	sum		IDENTIFIER
-	main		KEYWORD
-	func		IDENTIFIER
-	amp		IDENTIFIER
-	second		IDENTIFIER
-	printf		IDENTIFIER
-	div		IDENTIFIER
-	void		KEYWORD
+	X			IDENTIFIER
+	a			IDENTIFIER
+	b			IDENTIFIER
+	first			IDENTIFIER
+	duo			IDENTIFIER
+	orr			IDENTIFIER
+	prod			IDENTIFIER
+	diff			IDENTIFIER
+	return			KEYWORD
+	int			KEYWORD
+	float			KEYWORD
+	sum			IDENTIFIER
+	main			KEYWORD
+	func			IDENTIFIER
+	amp			IDENTIFIER
+	second			IDENTIFIER
+	printf			IDENTIFIER
+	union			KEYWORD
+	div			IDENTIFIER
+	void			KEYWORD
 
 
 CONSTANT TABLE
 
-	"Integer value : %d\n"		STRING CONSTANT
-	10		NUMBER CONSTANT
-	"Float value : %f\n"		STRING CONSTANT
-	0		NUMBER CONSTANT
-	6		NUMBER CONSTANT
+	"Integer value : %d\n"			STRING CONSTANT
+	10			NUMBER CONSTANT
+	"Float value : %f\n"			STRING CONSTANT
+	0			NUMBER CONSTANT
+	6			NUMBER CONSTANT

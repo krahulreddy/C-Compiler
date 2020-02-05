@@ -61,14 +61,14 @@ Line			Lexeme			Token Class
 
 SYMBOL TABLE
 
-	num		IDENTIFIER
-	int		KEYWORD
-	main		KEYWORD
-	printf		IDENTIFIER
-	void		KEYWORD
+	num			IDENTIFIER
+	int			KEYWORD
+	main			KEYWORD
+	printf			IDENTIFIER
+	void			KEYWORD
 
 
 CONSTANT TABLE
 
-	"num : %d"		STRING CONSTANT
-	10		NUMBER CONSTANT
+	"num : %d"			STRING CONSTANT
+	10			NUMBER CONSTANT
