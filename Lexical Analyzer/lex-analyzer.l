@@ -154,7 +154,7 @@
 				continue;
 			}
 
-			printf("\t%s\t\t%s\n",ST[i].name, ST[i].type);
+			printf("\t%s\t\t\t%s\n",ST[i].name, ST[i].type);
 		}
 		printf("\n\nCONSTANT TABLE\n\n");
 		for(int i = 0 ; i < 1001 ; i++)
@@ -162,7 +162,7 @@
 			if(CT[i].length == 0)
 				continue;
 
-			printf("\t%s\t\t%s\n",CT[i].name, CT[i].type);
+			printf("\t%s\t\t\t%s\n",CT[i].name, CT[i].type);
 		}
 	}
 %}
