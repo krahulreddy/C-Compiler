@@ -3,6 +3,7 @@ void main()
 {
     int rec[10][10];
     int att = 0, cls = 0;
+    int name = "Ram";                           //Error in structure
     flat rat;                                   //Misspelled keywords
     
     while(cls <= 40)
@@ -15,11 +16,11 @@ void main()
             att+;                               //Missing operator
             rec[cls] = 1;
         }
-    }
+    };                                          //Error in structure
     cls = 0;
     while(cls <= 40)
     {
-        printf("%%d - ", rec[cls]);             //Error in structure
+        printf("%d - ", rec[cls]);             
         cls++;
     }
 }
