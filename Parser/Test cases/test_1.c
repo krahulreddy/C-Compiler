@@ -1,11 +1,16 @@
 #include <stdio.h>
 
+//This is a structure
 struct duo{
     int first;
     float second;
     double third;
 }M;
 
+/*
+This is a function
+It takes three inputs
+*/
 void func(int a, float b, double c)
 {
     printf("Integer value : %d\n", a);
