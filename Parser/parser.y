@@ -312,9 +312,8 @@ extern int yylineno;
 extern char *yytext;
 void insertSTtype(char *,char *);
 void insertSTvalue(char *, char *);
-void incertCT(char *, char *);
-void printST();
-void printCT();
+void insert(char *, char *, int);
+void printTables();
 
 int main(int argc , char **argv)
 {
@@ -328,11 +327,11 @@ int main(int argc , char **argv)
         printf(ANSI_COLOR_GREEN "Status: Printing Symbol Table" ANSI_COLOR_RESET "\n");
 		printf("%30s" ANSI_COLOR_CYAN "SYMBOL TABLE" ANSI_COLOR_RESET "\n", " ");
 		printf("%30s %s\n", " ", "xxxxxxxxxxxxxx");
-		printST();
+		
         printf(ANSI_COLOR_GREEN "Status: Printing Constant Table" ANSI_COLOR_RESET "\n");
 		printf("\n\n%30s" ANSI_COLOR_CYAN "CONSTANT TABLE" ANSI_COLOR_RESET "\n", " ");
 		printf("%30s %s\n", " ", "xxxxxxxxxxxxxx");
-		printCT();
+		printTables();
 	}
 }
 
