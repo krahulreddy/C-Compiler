@@ -296,7 +296,7 @@
 [a-z|A-Z]([a-z|A-Z]|[0-9])*/\[ 	{strcpy(curid,yytext); insert(yytext, "Array Identifier", 0);  return identifier;}
 [1-9][0-9]*|0/[;|,|" "|\)|<|>|=|\!|\||&|\+|\-|\*|\/|\%|~|\]|\}|:|\n|\t|\^] 	{strcpy(curval,yytext); insert(yytext, "Number Constant", 1); return integer_constant;}
 ([0-9]*)\.([0-9]+)/[;|,|" "|\)|<|>|=|\!|\||&|\+|\-|\*|\/|\%|~|\n|\t|\^] 	{strcpy(curval,yytext); insert(yytext, "Floating Constant", 1); return float_constant;}
-[A-Za-z_][A-Za-z_0-9]* {strcpy(curid,yytext);insert(yytext,"Identifier");  return identifier;}
+[A-Za-z_][A-Za-z_0-9]* {strcpy(curid,yytext);insert(yytext,"Identifier", 1);  return identifier;}
 
 (.?) {
 		if(yytext[0]=='#')
