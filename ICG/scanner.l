@@ -1,6 +1,7 @@
 %{
 	#include <stdio.h>
 	#include <string.h>
+	#include <stdlib.h>
 	#include "y.tab.h"
 
 	struct symboltable
@@ -23,7 +24,6 @@
 	}CT[1001];
 
 	int currnest = 0;
-	int params_count = 0;
 	extern int yylval;
 
 	int hash(char *str)
@@ -198,13 +198,14 @@
 		}
 	}
 
-	void insertSTparamscount(char *s, int count)
+	void insertSTparamscount(char *s, int count1)
 	{
+
 		for(int i = 0 ; i < 1001 ; i++)
 		{
 			if(strcmp(ST[i].name,s)==0 )
 			{
-				ST[i].params_count = count;
+				ST[i].params_count = count1;
 			}
 		}
 	}
@@ -218,7 +219,7 @@
 				return ST[i].params_count;
 			}
 		}
-		return -2;
+		return -1;
 	}
 
 	void insertSTF(char *s)
@@ -432,10 +433,6 @@
 			{
 				scope_depth = "*****";
 			}
-			if(strcmp(ST[i].name, "main") == 0)
-			{
-				printf("%10s | %15s | %10s | %10s | %10d | %15s | %10d |\n",ST[i].name, ST[i].class, ST[i].type, ST[i].value, ST[i].lineno, scope_depth, 0);
-			}
 			else
 			{
 				printf("%10s | %15s | %10s | %10s | %10d | %15s | %10d |\n",ST[i].name, ST[i].class, ST[i].type, ST[i].value, ST[i].lineno, scope_depth, ST[i].params_count);
@@ -447,7 +444,7 @@
 	void printCT()
 	{
 		printf("%10s | %15s\n","NAME", "TYPE");
-		for(int i=0;i<50;i++) {
+		for(int i=0;i<81;i++) {
 			printf("+");
 		}
 		printf("\n");

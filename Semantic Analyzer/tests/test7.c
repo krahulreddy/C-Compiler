@@ -1,23 +1,12 @@
-//for loop
-//continue
-//while loop
-//do while loop
-
 #include<stdio.h>
 
-int main()
+void myfunc(int a)
 {
-    int a=0;
-    for (a = 0; a < 10; a++)
-        {
-        	printf("H1");
-        }
-    
-    while(a>0) {
-        a--;
-    }
+	a++;
+}
 
-    do {
-        a++;
-    }while(a<10);
+void main()
+{
+	int i,n;
+	myfunc(i);
 }

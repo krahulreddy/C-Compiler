@@ -1,14 +1,13 @@
 #include<stdio.h>
 
-int main()
+int myfunc(int a)
 {
-	int a = 2;
-	printf("%d",a);
-	a++;
-	int b = 4;
-	int c = 3; 
-	
-	//int b = 8;
-	//int c = 3;
-	a--;
+	return a;
+}
+
+void main()
+{
+	int i,n;
+	myfunc(i,n);
+
 }
